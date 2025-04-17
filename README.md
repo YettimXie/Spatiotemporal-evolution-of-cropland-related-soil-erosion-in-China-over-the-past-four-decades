@@ -1,2 +1,9 @@
 # Spatiotemporal-evolution-of-cropland-related-soil-erosion-in-China-over-the-past-four-decades
-This study applied high-resolution remote sensing datasets to investigate the spatially-explicit dynamics of crop-specific soil erosion in China from 1980 to 2018 at a 30 m resolution based on the RUSLE model
+
+China’s croplands are facing serious threats of soil erosion, calling for long-term and spatially-explicit assessment to safeguard food security and promote sustainable land use management. Yet limited attention has been directed to examining high-resolution spatial cropland-related soil erosion in China over an extended time span, especially across diverse agricultural regions and different crop types. Therefore, this study applied high-resolution remote sensing datasets to investigate the spatially-explicit dynamics of crop-specific soil erosion in China from 1980 to 2018 at a 30 m resolution based on the RUSLE model. By unveiling the temporal-spatial evolution patterns of China’s crop-specific soil erosion together with a 30 m resolution dataset produced across a 40-year time span, this study is fully supportive of promoting soil and water conservation in sloping croplands and safeguarding stable food supply and sustainable agricultural practices.
+
+MATLAB code provided in Zonedo was used to preprocess the land cover and management factors, as well as the rainfall erosivity. Raster processing and calculations were then conducted in ArcMap 10.7 to compute the RUSLE factors and cropland-related soil erosion across China.
+
+**C factor spatial interpolation.m:** Since this study uses the 2010 crop harvested area to represent the crop harvesting patterns on cultivated land across different years, there may be spatial mismatches between the land use data of cultivated land and the crop harvested area data. Therefore, spatial interpolation is required for the crop harvested area proportion data.
+
+**R factor calculation.m:** Due to the high-resolution daily rainfall data used in this study are stored in NetCDF format, MATLAB was employed to process and convert them into TIFF format.
