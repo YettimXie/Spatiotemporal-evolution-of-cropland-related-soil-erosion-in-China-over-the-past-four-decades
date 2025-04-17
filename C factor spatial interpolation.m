@@ -1,6 +1,5 @@
 clear;
 clc;
-
 [A,R]=geotiffread('C:\Users\user\Desktop\xyt\ccrop_china.tif');
 A2=double(A);
 A2(find(A2<0))=NaN; 
